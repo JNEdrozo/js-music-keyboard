@@ -1,32 +1,5 @@
 /* eslint-disable */
 $(document).ready(function() {
-  // $(document).keydown(function(e) {
-  //   if (e.keycode === 37) {
-  //     document.getElementByID('cAudio').play();
-  //   }
-  // });
-
-  // document.querySelectorAll('.note.c').click = function() {
-  //   document.getElementById('cAudio').play();
-  // }
-
-  // function playAudioC() {
-  //   let sound = document.getElementById("cAudio")
-  //
-  //   sound.play();
-  // }
-
-
-  // $("body").keydown(function(event) {
-  //   if (event.keyCode === 67) {
-  //     cSound();
-  //   }
-  //
-  //   if (event.keyCode === 68) {
-  //     dSound();
-  //   }
-  //
-  // });
 
   function cNote() {
     let soundC = document.getElementById('cAudio');
@@ -69,10 +42,10 @@ $(document).ready(function() {
     soundB.load();
     soundB.play();
   }
-
-  $('.note.c').click(function() {
-    cNote();
-  });
+  // let variable = '.note.c'
+  // $(variable).click(function() {
+  //   cNote();
+  // });
 
   $('.note.d').click(function() {
     dNote();
@@ -97,6 +70,15 @@ $(document).ready(function() {
   $('.note.b').click(function() {
     bNote();
   });
+
+  // $(window).click(function(event) {
+  //   switch(variable) {
+  //     case '.note.c':
+  //     $(variable).click(function() {
+  //       cNote();
+  //     });
+  //   }
+  // });
 
   $(window).keydown(function(event) {
     if (event.keyCode === 67) {
