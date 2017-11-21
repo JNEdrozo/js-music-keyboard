@@ -1,44 +1,43 @@
-/* eslint-disable */
-$(document).ready(function() {
-
+// /* eslint-disable */
+$(document).ready(() => {
   function cNote() {
-    let soundC = document.getElementById('cAudio');
+    const soundC = document.getElementById('cAudio');
     soundC.load();
     soundC.play();
   }
 
   function dNote() {
-    let soundD = document.getElementById('dAudio');
+    const soundD = document.getElementById('dAudio');
     soundD.load();
     soundD.play();
   }
 
   function eNote() {
-    let soundE = document.getElementById('eAudio');
+    const soundE = document.getElementById('eAudio');
     soundE.load();
     soundE.play();
   }
 
   function fNote() {
-    let soundF = document.getElementById('fAudio');
+    const soundF = document.getElementById('fAudio');
     soundF.load();
     soundF.play();
   }
 
   function gNote() {
-    let soundG = document.getElementById('gAudio');
+    const soundG = document.getElementById('gAudio');
     soundG.load();
     soundG.play();
   }
 
   function aNote() {
-    let soundA = document.getElementById('aAudio');
+    const soundA = document.getElementById('aAudio');
     soundA.load();
     soundA.play();
   }
 
   function bNote() {
-    let soundB = document.getElementById('bAudio');
+    const soundB = document.getElementById('bAudio');
     soundB.load();
     soundB.play();
   }
@@ -47,7 +46,7 @@ $(document).ready(function() {
   //   cNote();
   // });
 
-  $('.note.d').click(function() {
+  $('.note.d').click(() => {
     dNote();
   });
 
